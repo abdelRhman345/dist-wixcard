@@ -33,6 +33,22 @@ h2 {
   padding: 7px 16px;
   width: 30%;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.9); }
+  @media (max-width: 575.98px) {
+    h2 {
+      font-size: 20px;
+      width: 50%; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    h2 {
+      font-size: 20px;
+      width: 50%; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h2 {
+      font-size: 22px;
+      width: 40%; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    h2 {
+      font-size: 23px;
+      width: 35%; } }
 
 /* Navigation Bar */
 .navbar {
@@ -44,8 +60,27 @@ h2 {
   width: 100%;
   height: 70px;
   background-color: rgba(51, 51, 51, 0.64);
-  z-index: 9999; }
-  .navbar .collapse .navbar-nav .nav-item .nav-link {
+  z-index: 9999;
+  text-align: right; }
+  @media (max-width: 575.98px) {
+    .navbar {
+      padding-top: 0; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar {
+      padding-top: 0; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar {
+      padding-top: 0; } }
+  @media (max-width: 575.98px) {
+    .navbar .navbar-collapse .navbar-nav {
+      background-color: rgba(51, 51, 51, 0.74); } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .navbar-collapse .navbar-nav {
+      background-color: rgba(51, 51, 51, 0.74); } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .navbar-collapse .navbar-nav {
+      background-color: rgba(51, 51, 51, 0.74); } }
+  .navbar .navbar-collapse .navbar-nav .nav-link {
     color: #f0f0f0;
     font-size: 15px;
     font-weight: 600;
@@ -53,10 +88,35 @@ h2 {
     -webkit-transition: .2s;
     transition: .2s;
     text-shadow: 0 0 3px #000; }
-    .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    @media (max-width: 575.98px) {
+      .navbar .navbar-collapse .navbar-nav .nav-link {
+        font-size: 13px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .navbar .navbar-collapse .navbar-nav .nav-link {
+        font-size: 13px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .navbar .navbar-collapse .navbar-nav .nav-link {
+        font-size: 14px; } }
+    .navbar .navbar-collapse .navbar-nav .nav-link:hover {
       color: #c7932d; }
 
 /* Craousel */
+@media (max-width: 575.98px) {
+  .carousel {
+    height: 100% !important; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel {
+    height: 100% !important; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel {
+    height: 100% !important; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .carousel {
+    height: 100% !important; } }
+
 .carousel .carousel-inner .carousel-item::after {
   content: "";
   position: absolute;
@@ -104,6 +164,26 @@ h2 {
   .about-me p {
     font-size: 15px;
     line-height: 25px; }
+    @media (max-width: 575.98px) {
+      .about-me p {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 50px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .about-me p {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 50px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .about-me p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 30px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .about-me p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 30px; } }
   .about-me .video {
     position: relative; }
     .about-me .video iframe {
@@ -112,8 +192,8 @@ h2 {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      width: 455px;
-      height: 260px; }
+      width: 88%;
+      height: 70%; }
 
 /* Wixcard */
 .wixcard {
@@ -123,11 +203,39 @@ h2 {
   .wixcard h2 {
     font-size: 22px;
     font-weight: 600; }
+    @media (max-width: 575.98px) {
+      .wixcard h2 {
+        font-size: 17px;
+        width: 85%; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .wixcard h2 {
+        font-size: 19px;
+        width: 60%; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .wixcard h2 {
+        font-size: 20px;
+        width: 50%; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .wixcard h2 {
+        font-size: 20px;
+        width: 40%; } }
   .wixcard p {
     font-size: 18px;
     line-height: 25px;
     width: 90%;
     margin-bottom: 80px; }
+    @media (max-width: 575.98px) {
+      .wixcard p {
+        font-size: 14px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .wixcard p {
+        font-size: 15px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .wixcard p {
+        font-size: 16px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .wixcard p {
+        font-size: 17px; } }
   .wixcard h3 {
     font-size: 18px;
     font-weight: 500;
@@ -138,6 +246,22 @@ h2 {
     width: 25%;
     text-shadow: 0 0 6px #000;
     text-align: center; }
+    @media (max-width: 575.98px) {
+      .wixcard h3 {
+        font-size: 16px;
+        width: 85%; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .wixcard h3 {
+        font-size: 16px;
+        width: 60%; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .wixcard h3 {
+        font-size: 17px;
+        width: 50%; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .wixcard h3 {
+        font-size: 17px;
+        width: 40%; } }
   .wixcard span {
     display: block;
     text-align: right;
@@ -147,13 +271,25 @@ h2 {
     position: relative;
     font-size: 15px;
     text-shadow: 0 0 .05px #000; }
+    @media (max-width: 575.98px) {
+      .wixcard span {
+        font-size: 13px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .wixcard span {
+        font-size: 13px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .wixcard span {
+        font-size: 14px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .wixcard span {
+        font-size: 14px; } }
     .wixcard span::after {
       content: "";
       position: absolute;
       top: 50%;
       right: 0;
       width: 15px;
-      height: 2px;
+      height: 1px;
       background: #c7932d; }
 
 /* Section Three D */
@@ -181,6 +317,18 @@ h2 {
   .threeD .container {
     position: relative;
     z-index: 999; }
+  @media (max-width: 575.98px) {
+    .threeD h2 {
+      width: 90%; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .threeD h2 {
+      width: 70%; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .threeD h2 {
+      width: 50%; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .threeD h2 {
+      width: 40%; } }
   .threeD p {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -188,6 +336,20 @@ h2 {
     line-height: 25px;
     padding: 15px 25px;
     margin-bottom: 60px; }
+    @media (max-width: 575.98px) {
+      .threeD p {
+        font-size: 13px;
+        line-height: 30px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .threeD p {
+        font-size: 13px;
+        line-height: 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .threeD p {
+        font-size: 14px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .threeD p {
+        font-size: 14px; } }
   .threeD .accordion .card {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -204,9 +366,35 @@ h2 {
         text-decoration: none; }
         .threeD .accordion .card h3 .btn-link:hover {
           color: #c7932d; }
+        @media (max-width: 575.98px) {
+          .threeD .accordion .card h3 .btn-link {
+            font-size: 14px; } }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+          .threeD .accordion .card h3 .btn-link {
+            font-size: 14px; } }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .threeD .accordion .card h3 .btn-link {
+            font-size: 15px; } }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .threeD .accordion .card h3 .btn-link {
+            font-size: 16px; } }
     .threeD .accordion .card .card-body {
       font-size: 14px;
       line-height: 28px; }
+      @media (max-width: 575.98px) {
+        .threeD .accordion .card .card-body {
+          font-size: 13px;
+          line-height: 30px; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .threeD .accordion .card .card-body {
+          font-size: 13px;
+          line-height: 30px; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .threeD .accordion .card .card-body {
+          font-size: 14px; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .threeD .accordion .card .card-body {
+          font-size: 14px; } }
   .threeD h4 {
     font-size: 18px;
     font-weight: 500;
@@ -219,6 +407,22 @@ h2 {
     width: 25%;
     text-shadow: 0 0 3px #000;
     text-align: center; }
+    @media (max-width: 575.98px) {
+      .threeD h4 {
+        font-size: 15px;
+        width: 70%; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .threeD h4 {
+        font-size: 15px;
+        width: 60%; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .threeD h4 {
+        font-size: 16px;
+        width: 50%; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .threeD h4 {
+        font-size: 17px;
+        width: 30%; } }
 
 /* Our Clients */
 .our-clinets {
@@ -265,6 +469,30 @@ h2 {
         font-size: 20px;
         margin-top: 50px;
         margin-bottom: 10px; }
+        @media (max-width: 575.98px) {
+          .our-clinets .card .card-img-overlay .card-title {
+            font-size: 12px; } }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+          .our-clinets .card .card-img-overlay .card-title {
+            font-size: 12px; } }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .our-clinets .card .card-img-overlay .card-title {
+            font-size: 14px; } }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .our-clinets .card .card-img-overlay .card-title {
+            font-size: 16px; } }
+      @media (max-width: 575.98px) {
+        .our-clinets .card .card-img-overlay .card-text {
+          font-size: 17px; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .our-clinets .card .card-img-overlay .card-text {
+          font-size: 17px; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .our-clinets .card .card-img-overlay .card-text {
+          font-size: 18px; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .our-clinets .card .card-img-overlay .card-text {
+          font-size: 22px; } }
     .our-clinets .card:hover .card-img-overlay {
       opacity: 1;
       -webkit-transform: scale(1);
@@ -309,6 +537,30 @@ h2 {
       -webkit-transition: .3s;
       transition: .3s;
       cursor: pointer; }
+      @media (max-width: 575.98px) {
+        .footer .navbar-nav .nav-item {
+          font-size: 17px;
+          width: 30px;
+          height: 30px;
+          line-height: 23px; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .footer .navbar-nav .nav-item {
+          font-size: 17px;
+          width: 30px;
+          height: 30px;
+          line-height: 23px; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .footer .navbar-nav .nav-item {
+          font-size: 18px;
+          width: 35px;
+          height: 35px;
+          line-height: 25px; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .footer .navbar-nav .nav-item {
+          font-size: 19px;
+          width: 40px;
+          height: 40px;
+          line-height: 28px; } }
       .footer .navbar-nav .nav-item:hover:nth-child(1) {
         background-color: #3b5999; }
       .footer .navbar-nav .nav-item:hover:nth-child(2) {
@@ -325,6 +577,18 @@ h2 {
     color: #fff;
     text-align: right;
     font-size: 14px; }
+    @media (max-width: 575.98px) {
+      .footer .copyright {
+        font-size: 12px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .footer .copyright {
+        font-size: 12px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .footer .copyright {
+        font-size: 13px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .footer .copyright {
+        font-size: 13px; } }
   .footer .scroll-top {
     position: fixed;
     bottom: 15px;
@@ -337,7 +601,8 @@ h2 {
     border: 1px solid #333;
     -webkit-transition: .3s;
     transition: .3s;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 999; }
     .footer .scroll-top:hover {
       padding-bottom: 50px; }
 
