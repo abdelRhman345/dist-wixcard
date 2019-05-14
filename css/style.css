@@ -31,7 +31,7 @@ h2 {
   border-right: 5px solid #333;
   color: #fff;
   padding: 7px 16px;
-  width: 30%;
+  width: 20%;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.9); }
   @media (max-width: 575.98px) {
     h2 {
@@ -100,6 +100,29 @@ h2 {
     .navbar .navbar-collapse .navbar-nav .nav-link:hover {
       color: #c7932d; }
 
+.btn-question {
+  position: fixed;
+  top: 75%;
+  left: 0;
+  width: 150px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 7px 16px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  border: none;
+  border-right: 7px solid #c7932d;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: 999; }
+  .btn-question:hover {
+    color: #c7932d; }
+  .btn-question:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
 /* Craousel */
 @media (max-width: 575.98px) {
   .carousel {
@@ -160,7 +183,20 @@ h2 {
   padding: 100px 30px;
   overflow: hidden; }
   .about-me h2 {
-    font-weight: 600; }
+    font-weight: 600;
+    width: 30%; }
+    @media (max-width: 575.98px) {
+      .about-me h2 {
+        width: 50%; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .about-me h2 {
+        width: 50%; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .about-me h2 {
+        width: 40%; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .about-me h2 {
+        width: 35%; } }
   .about-me p {
     font-size: 15px;
     line-height: 25px; }
@@ -202,7 +238,8 @@ h2 {
   overflow: hidden; }
   .wixcard h2 {
     font-size: 22px;
-    font-weight: 600; }
+    font-weight: 600;
+    width: 30%; }
     @media (max-width: 575.98px) {
       .wixcard h2 {
         font-size: 17px;
@@ -292,137 +329,82 @@ h2 {
       height: 1px;
       background: #c7932d; }
 
-/* Section Three D */
-.threeD {
-  padding: 100px 30px;
-  background-image: url("../images/IMG-20190511-WA0003.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden; }
-  .threeD::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(51, 51, 51, 0.5);
-    -webkit-filter: blur(10px);
-            filter: blur(10px); }
-  .threeD .container {
-    position: relative;
-    z-index: 999; }
-  @media (max-width: 575.98px) {
-    .threeD h2 {
-      width: 90%; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .threeD h2 {
-      width: 70%; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .threeD h2 {
-      width: 50%; } }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    .threeD h2 {
-      width: 40%; } }
-  .threeD p {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 3px;
-    line-height: 25px;
-    padding: 15px 25px;
-    margin-bottom: 60px; }
-    @media (max-width: 575.98px) {
-      .threeD p {
-        font-size: 13px;
-        line-height: 30px; } }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      .threeD p {
-        font-size: 13px;
-        line-height: 30px; } }
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      .threeD p {
-        font-size: 14px; } }
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      .threeD p {
-        font-size: 14px; } }
-  .threeD .accordion .card {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    text-align: right; }
-    .threeD .accordion .card .card-header {
-      padding: 0; }
-    .threeD .accordion .card h3 {
-      margin: 0;
-      padding: 20px; }
-      .threeD .accordion .card h3 .btn-link {
-        color: #c7932d;
-        -webkit-transition: .2s;
-        transition: .2s;
-        text-decoration: none; }
-        .threeD .accordion .card h3 .btn-link:hover {
-          color: #c7932d; }
-        @media (max-width: 575.98px) {
-          .threeD .accordion .card h3 .btn-link {
-            font-size: 14px; } }
-        @media (min-width: 576px) and (max-width: 767.98px) {
-          .threeD .accordion .card h3 .btn-link {
-            font-size: 14px; } }
-        @media (min-width: 768px) and (max-width: 991.98px) {
-          .threeD .accordion .card h3 .btn-link {
-            font-size: 15px; } }
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-          .threeD .accordion .card h3 .btn-link {
-            font-size: 16px; } }
-    .threeD .accordion .card .card-body {
-      font-size: 14px;
-      line-height: 28px; }
-      @media (max-width: 575.98px) {
-        .threeD .accordion .card .card-body {
-          font-size: 13px;
-          line-height: 30px; } }
-      @media (min-width: 576px) and (max-width: 767.98px) {
-        .threeD .accordion .card .card-body {
-          font-size: 13px;
-          line-height: 30px; } }
-      @media (min-width: 768px) and (max-width: 991.98px) {
-        .threeD .accordion .card .card-body {
-          font-size: 14px; } }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .threeD .accordion .card .card-body {
-          font-size: 14px; } }
-  .threeD h4 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    background-color: #c7932d;
-    border-right: 5px solid #333;
-    color: #fff;
-    padding: 10px;
-    width: 25%;
-    text-shadow: 0 0 3px #000;
-    text-align: center; }
-    @media (max-width: 575.98px) {
-      .threeD h4 {
-        font-size: 15px;
-        width: 70%; } }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      .threeD h4 {
-        font-size: 15px;
-        width: 60%; } }
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      .threeD h4 {
-        font-size: 16px;
-        width: 50%; } }
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      .threeD h4 {
-        font-size: 17px;
-        width: 30%; } }
+/* Section Model Question */
+.modal {
+  background-color: rgba(38, 38, 38, 0.7);
+  z-index: 9999;
+  padding: 50px 30px;
+  text-align: right; }
+  .modal .modal-dialog {
+    max-width: 95%; }
+    .modal .modal-dialog .modal-content {
+      background-color: rgba(0, 0, 0, 0.4); }
+      .modal .modal-dialog .modal-content .modal-header {
+        border: none; }
+        .modal .modal-dialog .modal-content .modal-header h5 {
+          font-size: 18px;
+          font-weight: 500;
+          background: #c7932d;
+          border-right: 5px solid #333;
+          color: #fff;
+          padding: 6px 20px;
+          margin-top: 15px;
+          width: 30%;
+          text-shadow: 0 0 3px rgba(0, 0, 0, 0.9); }
+          @media (max-width: 575.98px) {
+            .modal .modal-dialog .modal-content .modal-header h5 {
+              font-size: 15px;
+              width: 80%; } }
+          @media (min-width: 576px) and (max-width: 767.98px) {
+            .modal .modal-dialog .modal-content .modal-header h5 {
+              font-size: 15px;
+              width: 80%; } }
+          @media (min-width: 768px) and (max-width: 991.98px) {
+            .modal .modal-dialog .modal-content .modal-header h5 {
+              font-size: 17px;
+              width: 40%; } }
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            .modal .modal-dialog .modal-content .modal-header h5 {
+              font-size: 19px;
+              width: 35%; } }
+        .modal .modal-dialog .modal-content .modal-header .close {
+          padding: 0;
+          margin: 15px;
+          color: #fff; }
+      .modal .modal-dialog .modal-content .modal-body .card {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff; }
+        .modal .modal-dialog .modal-content .modal-body .card .btn-link {
+          color: #c7932d;
+          text-decoration: none; }
+          @media (max-width: 575.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .btn-link {
+              font-size: 13px; } }
+          @media (min-width: 576px) and (max-width: 767.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .btn-link {
+              font-size: 13px; } }
+          @media (min-width: 768px) and (max-width: 991.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .btn-link {
+              font-size: 14px; } }
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .btn-link {
+              font-size: 14px; } }
+        .modal .modal-dialog .modal-content .modal-body .card .card-body {
+          font-size: 14px;
+          line-height: 30px;
+          color: #dee2e6; }
+          @media (max-width: 575.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .card-body {
+              font-size: 12px; } }
+          @media (min-width: 576px) and (max-width: 767.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .card-body {
+              font-size: 12px; } }
+          @media (min-width: 768px) and (max-width: 991.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .card-body {
+              font-size: 13px; } }
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            .modal .modal-dialog .modal-content .modal-body .card .card-body {
+              font-size: 13px; } }
 
 /* Our Clients */
 .our-clinets {
@@ -497,6 +479,30 @@ h2 {
       opacity: 1;
       -webkit-transform: scale(1);
               transform: scale(1); }
+
+/* Contact Us */
+.contact-us {
+  padding: 100px 30px;
+  background-color: rgba(51, 51, 51, 0.1);
+  text-align: right; }
+  .contact-us form .form-control {
+    border-radius: 3px; }
+    .contact-us form .form-control:focus {
+      border-color: #c7932d;
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(199, 147, 45, 0.25);
+              box-shadow: 0 0 0 0.2rem rgba(199, 147, 45, 0.25); }
+  .contact-us form button {
+    background-color: #333;
+    border-radius: 2px;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+    padding: 5px 30px;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .contact-us form button:hover {
+      background-color: #c7932d;
+      color: #ffffff; }
 
 /* Google Map */
 .mapouter {
